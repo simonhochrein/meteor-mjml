@@ -7,7 +7,7 @@ Package.describe({
   name: 'simonhochrein:mjml',
   version: '0.0.1',
   summary: '',
-  git: '',
+  git: 'https://github.com/simonhochrein/meteor-mjml',
   documentation: 'README.md'
 });
 

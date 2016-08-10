@@ -4,10 +4,6 @@ import path from 'path';
 import * as Handlebars from 'handlebars';
 import { mjml2html } from 'mjml';
 
-// Variables exported by this module can be imported by other packages and
-// applications. See mjml-tests.js for an example of importing.
-export const name = 'mjml';
-
 MJML = class MJML {
     constructor(file){
         var folder = path.dirname(file);
@@ -34,4 +30,4 @@ MJML = class MJML {
         mailOptions.html = this.compile();
         Email.send(mailOptions);
     }
-}
+};

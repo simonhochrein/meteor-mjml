@@ -5,7 +5,7 @@ Npm.depends({
 
 Package.describe({
   name: 'simonhochrein:mjml',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'MJML Email Template Engine For Meteor',
   git: 'https://github.com/simonhochrein/meteor-mjml',
   documentation: 'README.md'

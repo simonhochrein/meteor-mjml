@@ -11,12 +11,19 @@ Includes all Handlebars functionality.
 
 `API`
 >	`new MJML(filepath)`
+
 >	Returns a new MJML Email instance
+
 > `.helpers(helpers)`
+
 > Pass all your Handlebars helpers into this function
+
 > `.compile()`
+
 > Returns a compiled version of your email
+
 > `.send()`
+
 > Calls Meteor's `Email.send` function, more documentation [here](https://docs.meteor.com/api/email.html)
 
 ### Examples:

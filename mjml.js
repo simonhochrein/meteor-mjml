@@ -1,7 +1,8 @@
 // Write your package code here!
 import fs from 'fs';
 import path from 'path';
-import * as Handlebars from 'handlebars';
+// import * as Handlebars from 'handlebars';
+Handlebars = Npm.require('handlebars');
 import { mjml2html } from 'mjml';
 
 MJML = class MJML {

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 // import * as Handlebars from 'handlebars';
 Handlebars = Npm.require('handlebars');
-import { mjml2html } from 'mjml';
+import mjml2html from 'mjml';
 
 MJML = class MJML {
     constructor(file){
@@ -25,7 +25,7 @@ MJML = class MJML {
     }
     compile() {
         var text = Handlebars.compile(this.mjml)(this.helpers||{});
-        return mjml2html(text);
+        return mjml2html(text).html;
     }
     send(mailOptions){
         mailOptions.html = this.compile();
